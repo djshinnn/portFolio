@@ -28,7 +28,7 @@ export const projects = [
     image: "/images/opensea-clone-coding.png",
     tags: ["React", "Node.js", "Express", "Mysql", "solidity", "Web3-js"],
     source: "https://velog.io/@tls980824/Clone-coding-Opensea",
-    visit: "https://github.com/djshinnn/beb_02_JMJ",
+    visit: "https://github.com/djshinnn/beb-02-JMJ",
     id: 2,
   },
   // {
