@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "데이터 기부 플랫폼",
     description:
-      "마지막 팀 프로젝트로 진행했습니다. 팀명은 Triple Donate였으며, decentralization, data, donation 각각의 의미를 순서대로 가지는 탈 중앙화 데이터 기부 플랫폼입니다. 데이터 기반의 연구를 하는 기관, 단체, 학생들은 triple donate를 통해 양질의 데이터를 얻고, 데이터를 기부하는 유저는 triple donate를 통해 자신의 어떤 개인 데이터가 어떤 곳에서 사용되는지 정확히 알 수 있습니다.",
+      "프로젝트 소개   :   decentralization, data,\ndonation의 의미를 가지는 탈중앙화 데이터 기부 플랫폼입니다.\n개발 의도   :   데이터 기반의 연구를 하는\n기관, 단체, 학생들은 triple donate를 통해\n양질의 데이터를 얻고, 데이터를 기부하는\n유저는 개인 데이터가 어떤 곳에서 사용되는지 정확히 알 수 있습니다.\n회고   :    등록된 게시물에 데이터를 기부한 유저는 ERC-20토큰을 지급받는 등 계획했던 기능 대부분 구현해 많은 도움이 되었던 프로젝트였습니다.",
     image: "/images/post_register.gif",
     tags: ["React", "Node.js", "Express", "Mongo", "solidity", "caver-js"],
     source:
@@ -13,7 +13,7 @@ export const projects = [
   {
     title: "Blockchain Community",
     description:
-      "두 번째 팀 프로젝트는 'Web2.0 Blockchain Community'를 진행했습니다. 커뮤니티 회원가입, Posting 등의 활동을 하면 ERC-20토큰을 지급해줍니다. 지급받은 ERC-20토큰으로 ERC-721 NFT 구매 가능하게 하는 프로젝트였습니다. UI에 대한 부분은 대부분 진행되었지만 직접적으로 토큰을 제공해주고 NFT를 구매하는 등의 기능은 구현하지 못해 아쉬움이 많이 남는 프로젝트였습니다.",
+      "프로젝트 소개   :   회원가입, Posting 등의\n커뮤니티 활동을 통해 ERC-20토큰의 보상을\n받을 수 있는 Web2.0 블록체인 커뮤니티\n사이트입니다.\n개발 의도   :   커뮤니티 활동을 하면 ERC-20토큰을 지급해줍니다. 지급받은 ERC-20토큰으로 ERC-721 NFT 구매를 가능하게 하는\n프로젝트입니다.\n회고   :   UI에 대한 부분은 대부분 진행되었지만 가장 중요한 기능인 토큰 지급과 NFT 구매의 기능을 구현하지 못해 아쉬움이 많이 남는 프로젝트였습니다.",
     image: "/images/blockchain-community.png",
     tags: ["React", "Node.js", "Express", "MySql", "solidity"],
     source:
@@ -24,7 +24,7 @@ export const projects = [
   {
     title: "Opensea Clone Coding",
     description:
-      "첫 번째 팀 프로젝트로 'Opensea Clone Coding'을 진행했습니다. Opensea는 세계 최고의 NFT 거래소로 ERC721, ERC1155의 NFT를 판매하는 사이트입니다. 최대한 비슷하게 구현하고 싶었지만 NFT 생성은 구현했지만, NFT 구매와 판매 등록까지는 구현을 못해서 아쉬웠습니다. 이 프로젝트를 통해 처음 협업해보았으며, git 사용에 대해 많이 배웠습니다.",
+      "프로젝트 소개   :   세계 NFT 1위 거래소인\nOpensea Clone Coding을 진행했습니다.\n개발 의도   :   ERC-721, ERC-1155의 NFT\n등록, 판매, 구매 등을 구현해보는 프로젝트\n입니다.\n회고   :   NFT 등록은 진행했으나, 판매, 구매 등의 기능은 구현하지 못했습니다.\n이 프로젝트를 통해 처음 협업해보았으며,\ngit 사용 등에 대해서 많이 배웠습니다.",
     image: "/images/opensea-clone-coding.png",
     tags: ["React", "Node.js", "Express", "Mysql", "solidity", "Web3-js"],
     source: "https://velog.io/@tls980824/Clone-coding-Opensea",
