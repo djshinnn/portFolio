@@ -24,12 +24,11 @@ import {
 const Technologies = () => (
   <Section id="tech">
     <SectionDivider />
-    <br />
-    <SectionTitle>Technologies</SectionTitle>
+    <SectionTitle style={{ marginTop: "5rem" }}>Technologies</SectionTitle>
     <SectionText style={{ fontSize: "20px" }}>
-      블록체인 서비스 개발에 필요한 Web App을 위한
+      프론트엔드 개발에만 국한되지 않고
       <br />
-      Front-end, Back-end, Solidity 모두 다뤄보았습니다.
+      Node.js, MongoDB를 활용한 백엔드 개발 경험도 있습니다.
     </SectionText>
     <List>
       <ListItem>

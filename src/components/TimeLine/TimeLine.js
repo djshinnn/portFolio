@@ -65,11 +65,13 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
+      <SectionDivider />
+
+      <SectionTitle style={{ marginTop: "5rem" }}>About Me</SectionTitle>
       <SectionText style={{ fontSize: "20px" }}>
-        저의 목표는 앞으로 사용자들이 Web3생태계에 쉽게 접근할 수 있도록
+        저의 목표는 많은 사용자들이 쉽게 접근 가능한 사용자 친화적인 웹사이트를
         <br />
-        도와주는 프론트엔드 개발자가 되는것입니다.
+        개발하는 프론트엔드 개발자가 되는것입니다.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

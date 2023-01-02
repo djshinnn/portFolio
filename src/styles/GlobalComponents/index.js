@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Section = styled.section`
   display: ${(props) => (props.grid ? "grid" : "flex")};
   flex-direction: ${(props) => (props.row ? "row" : "column")};
-  padding: ${(props) => (props.nopadding ? "0" : "32px 48px 0")};
+  padding: 32px;
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 1300px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;

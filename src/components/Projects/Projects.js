@@ -2,6 +2,8 @@ import React from "react";
 
 import {
   BlogCard,
+  CardTitle,
+  CardDescription,
   CardInfo,
   ExternalLinks,
   GridContainer,
@@ -12,6 +14,7 @@ import {
   TitleContent,
   UtilityList,
   Img,
+  ImageBox,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -22,72 +25,96 @@ import { projects } from "../../constants/constants";
 import { practice } from "../../constants/constants";
 
 const Projects = () => (
-  <Section nopadding id="projects">
+  <Section id="projects">
     <SectionDivider />
+
     <SectionTitle main>Team Projects</SectionTitle>
     <GridContainer>
       {projects.map(
-        ({ id, image, title, description, tags, source, visit, deploy }) => (
+        ({ id, image, title, introduce, intent, content, source, visit }) => (
           <BlogCard key={id}>
-            <Img src={image} style={{ height: "280px" }} />
-            <TitleContent>
-              <HeaderThree title>{title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo style={{ whiteSpace: "pre-wrap" }}>
-              {description}
-            </CardInfo>
-            <br />
+            <ImageBox>
+              <Img src={image} />
+            </ImageBox>
+
             <div>
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {tags.map((tag, idx) => (
-                  <Tag key={idx}>{tag}</Tag>
-                ))}
-              </TagList>
+              <CardInfo>
+                <TitleContent>
+                  <HeaderThree title>{title}</HeaderThree>
+                  <Hr />
+                </TitleContent>
+                <div style={{ display: "flex" }}>
+                  <CardTitle>{`프로젝트${"\n"}소개`}</CardTitle>
+                  <CardDescription>{introduce}</CardDescription>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  <CardTitle>{`개발${"\n"}의도`}</CardTitle>
+                  <CardDescription>{intent}</CardDescription>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  <CardTitle>{`개발${"\n"}기능`}</CardTitle>
+                  <CardDescription>{content}</CardDescription>
+                </div>
+              </CardInfo>
+              <br />
+
+              <UtilityList>
+                <ExternalLinks href={visit} target="_blank">
+                  깃허브
+                </ExternalLinks>
+                <ExternalLinks href={source} target="_blank">
+                  개발 과정
+                </ExternalLinks>
+              </UtilityList>
             </div>
-            <UtilityList>
-              <ExternalLinks href={visit} target="_blank">
-                Code
-              </ExternalLinks>
-              <ExternalLinks href={source} target="_blank">
-                Source
-              </ExternalLinks>
-            </UtilityList>
           </BlogCard>
         )
       )}
     </GridContainer>
+    <SectionDivider style={{ marginTop: "5rem" }} />
     <SectionTitle main>Running</SectionTitle>
     <GridContainer>
       {practice.map(
-        ({ id, image, title, description, tags, source, visit }) => (
+        ({ id, image, title, introduce, intent, content, source, visit }) => (
           <BlogCard key={id}>
-            <Img src={image} style={{ height: "230px" }} />
-            <TitleContent>
-              <HeaderThree title>{title}</HeaderThree>
-              <Hr />
-            </TitleContent>
-            <CardInfo style={{ whiteSpace: "pre-wrap" }}>
-              {description}
-            </CardInfo>
-            <br />
+            <ImageBox>
+              <Img src={image} />
+            </ImageBox>
+
             <div>
-              <TitleContent>Stack</TitleContent>
-              <TagList>
-                {tags.map((tag, idx) => (
-                  <Tag key={idx}>{tag}</Tag>
-                ))}
-              </TagList>
+              <CardInfo>
+                <TitleContent>
+                  <HeaderThree title>{title}</HeaderThree>
+                  <Hr />
+                </TitleContent>
+                <div style={{ display: "flex" }}>
+                  <CardTitle>{`프로젝트${"\n"}소개`}</CardTitle>
+                  <CardDescription>{introduce}</CardDescription>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  <CardTitle>{`개발${"\n"}의도`}</CardTitle>
+                  <CardDescription>{intent}</CardDescription>
+                </div>
+
+                <div style={{ display: "flex" }}>
+                  <CardTitle>{`개발${"\n"}기능`}</CardTitle>
+                  <CardDescription>{content}</CardDescription>
+                </div>
+              </CardInfo>
+              <br />
+
+              <UtilityList>
+                <ExternalLinks href={visit} target="_blank">
+                  깃허브
+                </ExternalLinks>
+                <ExternalLinks href={source} target="_blank">
+                  배포 사이트
+                </ExternalLinks>
+              </UtilityList>
             </div>
-            <UtilityList>
-              <ExternalLinks href={visit} target="_blank">
-                Code
-              </ExternalLinks>
-              <ExternalLinks href={source} target="_blank">
-                Source
-              </ExternalLinks>
-            </UtilityList>
           </BlogCard>
         )
       )}
