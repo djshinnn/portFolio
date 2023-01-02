@@ -27,11 +27,11 @@ export const Section = styled.section`
 export const SectionName = styled.h2`
   font-weight: 1000;
   font-size: ${(props) => (props.main ? "65px" : "56px")};
-  line-height: ${(props) => (props.main ? "72px" : "56px")};
+  line-height: ${(props) => (props.main ? "72px" : "60px")};
   width: max-content;
   max-width: 100%;
   background: linear-gradient(
-    130.57deg,
+    164.57deg,
     #686de0 44.77%,
     rgba(255, 160, 255, 0.66) 60.15%
   );
