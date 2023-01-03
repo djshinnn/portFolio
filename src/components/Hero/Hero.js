@@ -1,5 +1,7 @@
 import React from "react";
 
+import Typed from "react-typed";
+
 import {
   Section,
   SectionName,
@@ -13,8 +15,11 @@ const Hero = (props) => (
   <Section row nowpadding>
     <LeftSection>
       <SectionTitle main center>
-        Welcome to <br />
-        <SectionName>Dongju Shin Portfolio</SectionName>
+        Welcome to
+        <br />
+        <SectionName>
+          <Typed strings={["Dongju Shin Portfolio"]} typeSpeed={100} />
+        </SectionName>
       </SectionTitle>
       <SectionText style={{ fontSize: "19px", fontWeight: "bold" }}>
         안녕하세요. 프론트엔드 개발자를 희망하는 신동주입니다. <br />
