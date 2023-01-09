@@ -9,12 +9,11 @@ import {
   GridContainer,
   HeaderThree,
   Hr,
-  Tag,
-  TagList,
   TitleContent,
   UtilityList,
   Img,
   ImageBox,
+  CardBox,
 } from "./ProjectsStyles";
 import {
   Section,
@@ -43,20 +42,21 @@ const Projects = () => (
                   <HeaderThree title>{title}</HeaderThree>
                   <Hr />
                 </TitleContent>
-                <div style={{ display: "flex" }}>
+
+                <CardBox>
                   <CardTitle>{`프로젝트${"\n"}소개`}</CardTitle>
                   <CardDescription>{introduce}</CardDescription>
-                </div>
+                </CardBox>
 
-                <div style={{ display: "flex" }}>
+                <CardBox>
                   <CardTitle>{`개발${"\n"}의도`}</CardTitle>
                   <CardDescription>{intent}</CardDescription>
-                </div>
+                </CardBox>
 
-                <div style={{ display: "flex" }}>
+                <CardBox>
                   <CardTitle>{`개발${"\n"}기능`}</CardTitle>
                   <CardDescription>{content}</CardDescription>
-                </div>
+                </CardBox>
               </CardInfo>
               <br />
 
@@ -89,20 +89,20 @@ const Projects = () => (
                   <HeaderThree title>{title}</HeaderThree>
                   <Hr />
                 </TitleContent>
-                <div style={{ display: "flex" }}>
+                <CardBox>
                   <CardTitle>{`프로젝트${"\n"}소개`}</CardTitle>
                   <CardDescription>{introduce}</CardDescription>
-                </div>
+                </CardBox>
 
-                <div style={{ display: "flex" }}>
+                <CardBox>
                   <CardTitle>{`개발${"\n"}의도`}</CardTitle>
                   <CardDescription>{intent}</CardDescription>
-                </div>
+                </CardBox>
 
-                <div style={{ display: "flex" }}>
+                <CardBox>
                   <CardTitle>{`개발${"\n"}기능`}</CardTitle>
                   <CardDescription>{content}</CardDescription>
-                </div>
+                </CardBox>
               </CardInfo>
               <br />
 

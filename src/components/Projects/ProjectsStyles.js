@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Img = styled.img`
-  width: 650px;
+  width: 100%;
   height: 90%;
   object-fit: cover;
   overflow: hidden;
@@ -35,7 +35,13 @@ export const BlogCard = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 100%;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    flex-direction: column;
+    width: 100%;
+  }
   @media ${(props) => props.theme.breakpoints.sm} {
+    padding: 0;
+    padding-bottom: 1.5rem;
     width: 100%;
   }
 `;
@@ -50,7 +56,11 @@ export const HeaderThree = styled.h3`
   letter-spacing: 2px;
   color: #9cc9e3;
   padding: 0.5rem 0;
+  word-break: keep-all;
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 2rem;
+  }
 `;
 
 export const Hr = styled.hr`
@@ -59,6 +69,9 @@ export const Hr = styled.hr`
   margin: 20px auto;
   border: 0;
   background: #d0bb57;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin: 10px auto 15px auto;
+  }
 `;
 
 export const Intro = styled.div`
@@ -80,8 +93,17 @@ export const CardInfo = styled.p`
   text-align: justify;
   word-break: break-all;
   white-space: pre-wrap;
+  @media ${(props) => props.theme.breakpoints.lg} {
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+`;
+
+export const CardBox = styled.div`
+  display: flex;
+  justify-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.3rem;
+    line-height: 15px;
   }
 `;
 
@@ -93,12 +115,20 @@ export const CardTitle = styled.div`
   border: 1px solid #ffaf61;
   padding: 1rem;
   width: 80px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1rem;
+  }
 `;
 
 export const CardDescription = styled.div`
   border: 1px solid #ffaf61;
   padding: 1rem;
   width: 380px;
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 1rem;
+  }
 `;
 
 export const UtilityList = styled.ul`
@@ -118,6 +148,11 @@ export const ExternalLinks = styled.a`
   transition: 0.5s;
   &:hover {
     background: #801414;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    margin-left: 2rem;
+    font-size: 1rem;
   }
 `;
 

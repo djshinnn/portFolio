@@ -25,7 +25,7 @@ const Technologies = () => (
   <Section id="tech">
     <SectionDivider />
     <SectionTitle style={{ marginTop: "5rem" }}>Technologies</SectionTitle>
-    <SectionText style={{ fontSize: "20px" }}>
+    <SectionText>
       프론트엔드 개발에만 국한되지 않고
       <br />
       Node.js, MongoDB를 활용한 백엔드 개발 경험도 있습니다.

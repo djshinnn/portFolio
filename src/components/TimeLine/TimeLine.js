@@ -68,7 +68,7 @@ const Timeline = () => {
       <SectionDivider />
 
       <SectionTitle style={{ marginTop: "5rem" }}>About Me</SectionTitle>
-      <SectionText style={{ fontSize: "20px" }}>
+      <SectionText>
         저의 목표는 많은 사용자들이 쉽게 접근 가능한 사용자 친화적인 웹사이트를
         <br />
         개발하는 프론트엔드 개발자가 되는것입니다.
