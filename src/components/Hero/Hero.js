@@ -34,7 +34,7 @@ const Hero = (props) => (
         <Button
           onClick={() =>
             window.open(
-              "file:///Users/sindongju/Downloads/%EC%8B%A0%EB%8F%99%EC%A3%BC_%EC%9D%B4%EB%A0%A5%EC%84%9C(%EC%B5%9C%EC%A2%852).pdf"
+              "https://drive.google.com/file/d/1_IiguQNHzG-y-tpcvnYehJkut-ye_00-/view"
             )
           }
         >
