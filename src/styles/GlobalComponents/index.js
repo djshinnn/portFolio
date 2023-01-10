@@ -225,6 +225,7 @@ export const ButtonBack = styled.div`
   position: relative;
   overflow: hidden;
   opacity: ${({ disabled }) => (disabled ? ".5" : "1")};
+  margin-right: 10px;
 
   @media ${(props) => props.theme.breakpoints.md} {
     width: ${({ alt }) => (alt ? "150px" : "184px")};
