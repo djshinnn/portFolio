@@ -8,7 +8,8 @@ export const projects = [
     content:
       "▪  회원 정보 및 고객 결제 정보 관리, 고객 충전 이력 관리\n▪  충전기 설치 건물 관리, 충전기 관리\n▪  설치 건물 별 과금 내역, 충전기 별 과금 내역\n▪  매출 통계, 손익 통계",
     image: "/images/sesac-saver.gif",
-    source: "https://github.com/djshinnn/sesac-saver",
+    source:
+      "https://pleasant-arthropod-af2.notion.site/LED-Saver-Team-cd80a5cab29f4d0784650bd8698ec44d",
     visit: "https://github.com/djshinnn/sesac-saver",
     id: 0,
   },
