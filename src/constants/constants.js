@@ -7,7 +7,7 @@ export const projects = [
       "▪  기기 상태 모니터링을 통한 명확한 상태 정보 제공\n▪  충전기 과금 이력 관리를 통한 명확한 매출 관리\n▪   회원별 충전 내역 관리를 통한 인센티브 제공",
     content:
       "▪  회원 정보 및 고객 결제 정보 관리, 고객 충전 이력 관리\n▪  충전기 설치 건물 관리, 충전기 관리\n▪  설치 건물 별 과금 내역, 충전기 별 과금 내역\n▪  매출 통계, 손익 통계",
-    image: "/images/sessac-saver.gif",
+    image: "/images/sesac-saver.gif",
     source: "https://github.com/djshinnn/sesac-saver",
     visit: "https://github.com/djshinnn/sesac-saver",
     id: 0,
